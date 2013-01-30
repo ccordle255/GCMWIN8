@@ -1,0 +1,13 @@
+C:\Users\Chris\Documents\GitHub\GCM\GCMWIN8\bin\Debug\resources.pri
+C:\Users\Chris\Documents\GitHub\GCM\GCMWIN8\bin\Debug\AppxManifest.xml
+C:\Users\Chris\Documents\GitHub\GCM\GCMWIN8\bin\Debug\GCMWIN8.build.appxrecipe
+C:\Users\Chris\Documents\GitHub\GCM\GCMWIN8\bld\Debug\priconfig.xml
+C:\Users\Chris\Documents\GitHub\GCM\GCMWIN8\bld\Debug\layout.resfiles
+C:\Users\Chris\Documents\GitHub\GCM\GCMWIN8\bld\Debug\resources.resfiles
+C:\Users\Chris\Documents\GitHub\GCM\GCMWIN8\bld\Debug\pri.resfiles
+C:\Users\Chris\Documents\GitHub\GCM\GCMWIN8\bld\Debug\LanguageQualifiers.txt
+C:\Users\Chris\Documents\GitHub\GCM\GCMWIN8\bld\Debug\ProjectArchitectures.txt
+C:\Users\Chris\Documents\GitHub\GCM\GCMWIN8\bld\Debug\priconfig.xml.intermediate
+C:\Users\Chris\Documents\GitHub\GCM\GCMWIN8\bld\Debug\layout.resfiles.intermediate
+C:\Users\Chris\Documents\GitHub\GCM\GCMWIN8\bld\Debug\resources.resfiles.intermediate
+C:\Users\Chris\Documents\GitHub\GCM\GCMWIN8\bld\Debug\pri.resfiles.intermediate
