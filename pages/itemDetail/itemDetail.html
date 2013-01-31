@@ -13,8 +13,27 @@
     <link href="/pages/itemDetail/itemDetail.css" rel="stylesheet" />
     <script src="/js/data.js"></script>
     <script src="/pages/itemDetail/itemDetail.js"></script>
+    <style>
+        .location {
+            width: 350px;
+            margin: 10px;
+        }
+        .win-listview {
+            height: 420px;
+        }
+    </style>
 </head>
 <body>
+    <!-- Templates -->
+    <div class="locationtemplate" data-win-control="WinJS.Binding.Template">
+        <div class="location">
+            <p class="location-name" data-win-bind="textContent: name"></p>
+            <p class="location-address" data-win-bind="textContent: address_1"></p>
+            <p><span class="location-city" data-win-bind="textContent: city"></span>, <span data-win-bind="textContent: state"></span> <span data-win-bind="textContent: zip"></span></p>
+            <p data-win-bind="textContent: phone"></p>
+        </div>
+    </div>
+
     <!-- The content that will be loaded and displayed. -->
     <div class="itemdetailpage fragment">
         <header aria-label="Header content" role="banner">
@@ -25,16 +44,26 @@
         </header>
         <div class="content" aria-label="Main content" role="main">
             <article>
-                <div>
+                <div style="height: 75%;">
                     <header>
                         <h2 class="item-title"></h2>
                         <h4 class="item-subtitle"></h4>
                     </header>
                     <img class="item-image" src="#" />
-                    <div class="item-content"></div>
+                    <p class="item-content" style="font-size: medium;"></p>
+                    <small class="item-fineprint"></small>
+                </div>
+                <div style="height: 25%; text-align: center;">
+                    <p><button style="background-color: red; font-size: x-large;" onclick="Item.redeem()">Redeem This Deal</button></p>
+                </div>
+                <div>
+                    <h2>Locations</h2>
+                    <div class="basicListView win-selectionstylefilled" aria-label="List of this group's items" data-win-control="WinJS.UI.ListView" data-win-options="{ selectionMode: 'none', layout: {type: WinJS.UI.ListLayout} } ">
+                    </div>
                 </div>
             </article>
         </div>
     </div>
+    <div><a id="gcm" href="http://www.giftcertificatesandmore.com"></a></div>
 </body>
 </html>

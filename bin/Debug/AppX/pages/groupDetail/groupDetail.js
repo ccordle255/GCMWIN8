@@ -7,24 +7,16 @@
     function Subcat(obj, groupKey) {
         return {
             title: obj.name,
-            subtitle: "Item Subtitle: 1",
-            description: "blahblah",
-            content: "contentcontent",
+            subtitle: obj.deal_type,
+            description: obj.description,
+            data: obj,
             backgroundImage: obj.image_url,
             groupKey: groupKey,
             id: obj.id,
-            type: obj.type
+            type: obj.type          
         }
     }
-
-//    { group: sampleGroups[0], title: "Car Insurance", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: "/images/category/81.jpg" }
-
-    function Item() {
-        return {
-
-        }
-    }
-
+    
     ui.Pages.define("/pages/groupDetail/groupDetail.html", {
         /// <field type="WinJS.Binding.List" />
         _items: null,

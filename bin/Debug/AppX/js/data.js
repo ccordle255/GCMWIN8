@@ -24,32 +24,17 @@
 
         
     });
-
     
     window.makeAuth = function (user, password) {
         var tok = user + ':' + password;
         var hash = Base64.encode(tok);
         return "Basic " + hash;
-    }
-
+    };
     
     var url = 'https://www.giftcertificatesandmore.com/api/v1/user/login/';
 
     // jQuery
-    $.ajax({
-        url: url,
-        method: 'GET',
-        beforeSend: function (req) {
-            var auth = makeAuth();
-            req.setRequestHeader('Authorization', auth);
-        },
-        success: function () {
-            //do this
-        },
-        error: function () {
-            //do this
-        }
-    });
+    
 
     WinJS.Namespace.define("Data", {
         groups: list,
